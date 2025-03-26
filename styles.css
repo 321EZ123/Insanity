@@ -18,7 +18,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-image: url('images/static-bg.jpg'); /* Set the background GIF */
+  background-image: url('images/static-bg.png'); /* Set the background GIF */
   background-size: cover; /* Ensure the image covers the entire background */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent the image from repeating */
