@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Insanity Games</title>
+  <title>Been's Hub</title>
   <link rel="stylesheet" href="styles.css">
   <style>
     .button {
@@ -42,11 +42,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      transition: opacity 1s ease; /* Smooth transition for opacity */
     }
 
     /* Hide the overlay after the GIF duration */
     .hidden {
-      display: none;
+      opacity: 0; /* Fade out */
+      pointer-events: none; /* Prevent interactions when hidden */
     }
   </style>
 </head>
@@ -54,7 +56,7 @@
   <div id="gifOverlay"></div> <!-- GIF overlay -->
 
   <header>
-    <h1>Insanity Games</h1>
+    <h1>Been's Hub</h1>
     <nav>
       <ul>
         <li><a href="index.html" class="active">Home</a></li>
@@ -69,16 +71,16 @@
   <main>
     <section id="home" class="section">
       <div class="hero">
-        <h2>Insanity Games</h2>
+        <h2>Been's Games Hub</h2>
         <!-- Logo Image -->
         <img src="images/logo.jpg" alt="Been's Hub Logo">
-        <p>Made by EZ123 on <a href="https://discord.com/invite/arcgZTV9zX" target="_blank" rel="noopener noreferrer">discord</a></p>
+        <p>Made by been on <a href="https://discord.gg/sNP3h6qzba" target="_blank" rel="noopener noreferrer">discord</a></p>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Insanity Games All rights reserved.</p>
+    <p>&copy; 2024 Been's Hub. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
@@ -90,11 +92,14 @@
       const staticImage = 'images/static-bg.jpg'; // Path to your static image
 
       setTimeout(() => {
-        gifOverlay.classList.add('hidden'); // Hide the GIF overlay
-        document.body.style.backgroundImage = `url('${staticImage}')`;
-        document.body.style.backgroundRepeat = 'no-repeat';
-        document.body.style.backgroundSize = 'cover';
-        document.body.style.backgroundPosition = 'center';
+        gifOverlay.classList.add('hidden'); // Start fade out
+        setTimeout(() => {
+          gifOverlay.style.display = 'none'; // Hide overlay after fade out
+          document.body.style.backgroundImage = `url('${staticImage}')`;
+          document.body.style.backgroundRepeat = 'no-repeat';
+          document.body.style.backgroundSize = 'cover';
+          document.body.style.backgroundPosition = 'center';
+        }, 1000); // Match this to the opacity transition duration
       }, gifDuration);
     };
   </script>
