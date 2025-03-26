@@ -12,7 +12,7 @@
 
     .button {
       display: inline-block;
-      padding: 5px 10px; /* Smaller padding */
+      padding: 5px 10px; /* Smaller padding for buttons */
       background-color: #000000; /* Black background */
       color: #00ff00; /* Neon green text */
       text-decoration: none;
@@ -21,7 +21,7 @@
       border: 2px solid #006400; /* Darker green border */
       box-shadow: 0 0 5px #004d00; /* Even darker green glow */
       text-shadow: 0 0 3px #00ff00;
-      font-size: 14px; /* Smaller font size */
+      font-size: 14px; /* Smaller font size for buttons */
     }
 
     .button:hover {
@@ -50,7 +50,18 @@
     nav a {
       color: lightblue; /* Light blue for nav links */
       text-decoration: none;
-      font-size: 16px; /* Font size for navigation */
+      font-size: 14px; /* Smaller font size for navigation */
+      padding: 5px 10px; /* Smaller padding for nav buttons */
+      border: 2px solid #006400; /* Darker green border for nav buttons */
+      border-radius: 5px; /* Rounded corners for nav buttons */
+      transition: all 0.3s ease;
+      box-shadow: 0 0 5px #004d00; /* Glow effect for nav buttons */
+    }
+
+    nav a:hover, nav a.active {
+      background-color: #1a1a1a; /* Slightly lighter black on hover */
+      box-shadow: 0 0 8px #006400; /* Increased glow on hover */
+      border-color: #008000; /* Brighter green border on hover */
     }
 
     h1, h2, h3, p {
@@ -63,10 +74,10 @@
     <h1>Insanity Games</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="g.html" class="active">Games</a></li>
-        <li><a href="proxy.html">Proxy</a></li>
-        <li><a href="partners.html">Partners</a></li>
+        <li><a href="index.html" class="button">Home</a></li>
+        <li><a href="g.html" class="active button">Games</a></li>
+        <li><a href="proxy.html" class="button">Proxy</a></li>
+        <li><a href="partners.html" class="button">Partners</a></li>
       </ul>
     </nav>
   </header>
