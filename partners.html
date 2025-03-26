@@ -10,7 +10,7 @@
   <style>
     body {
       background-color: #add8e6; /* Light blue background for the entire page */
-      color: #ADD8E6; /* Light blue text for visibility */
+      color: #000; /* Black text for visibility */
       font-family: Arial, sans-serif; /* Set a clean font */
       line-height: 1.6; /* Improved line height for readability */
     }
@@ -58,13 +58,13 @@
     }
 
     .partner-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-      gap: 2rem;
-      justify-items: center;
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      align-items: flex-start; /* Align items to the left */
       margin: 20px auto; /* Center the grid */
-      text-align: center; /* Center text */
-      color: #ADD8E6; /* Light blue text for visibility */
+      text-align: left; /* Align text to the left */
+      color: #000; /* Black text for visibility */
+      max-width: 600px; /* Set a max width for better readability */
     }
 
     .partner-grid p {
@@ -78,7 +78,7 @@
       border-top: 2px solid #0000ff; /* Blue divider for footer */
       text-align: center; /* Center text in footer */
       padding: 1rem; /* Padding for footer */
-      color: #ADD8E6; /* Light blue text for footer */
+      color: #000; /* Black text for footer */
     }
   </style>
 </head>
@@ -100,6 +100,7 @@
     <section id="partners" class="section">
       <div class="partner-grid">
         <p>No partners currently. Apply in our Discord to become one!</p>
+        <p>We are actively looking for new partners to join our community. If you are interested in collaborating with us, please reach out via our Discord channel. We welcome all who share our passion for gaming and want to contribute to a vibrant gaming environment.</p>
       </div>
     </section>
   </main>
