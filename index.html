@@ -62,7 +62,6 @@
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="g.html">Games</a></li>
         <li><a href="proxy.html">Proxy</a></li>
-        <li><a href="links.html">Links</a></li>
         <li><a href="partners.html">Partners</a></li>
       </ul>
     </nav>
@@ -85,24 +84,35 @@
 
   <script src="script.js"></script>
   <script>
-    // Show intro only on index.html
+    // Show intro only on index.html and if it hasn't been shown before
     if (window.location.pathname.endsWith('index.html')) {
       const gifOverlay = document.getElementById('gifOverlay');
-      const gifDuration = 5000; // Duration in milliseconds (adjust as needed)
-      const staticImage = 'images/static-bg.jpg'; // Path to your static image
+      
+      // Check if intro has been shown before
+      if (!localStorage.getItem('introShown')) {
+        const gifDuration = 5000; // Duration in milliseconds (adjust as needed)
+        const staticImage = 'images/static-bg.jpg'; // Path to your static image
 
-      setTimeout(() => {
-        gifOverlay.classList.add('hidden'); // Start fade out
-        document.body.style.backgroundImage = `url('${staticImage}')`;
-        document.body.style.backgroundRepeat = 'no-repeat';
-        document.body.style.backgroundSize = 'cover';
-        document.body.style.backgroundPosition = 'center';
-      }, gifDuration);
+        // Show the overlay
+        setTimeout(() => {
+          gifOverlay.classList.add('hidden'); // Start fade out
+          document.body.style.backgroundImage = `url('${staticImage}')`;
+          document.body.style.backgroundRepeat = 'no-repeat';
+          document.body.style.backgroundSize = 'cover';
+          document.body.style.backgroundPosition = 'center';
+        }, gifDuration);
 
-      // Remove the overlay after fade out transition
-      gifOverlay.addEventListener('transitionend', () => {
-        gifOverlay.style.display = 'none'; // Hide overlay after fade out
-      });
+        // Remove the overlay after fade out transition
+        gifOverlay.addEventListener('transitionend', () => {
+          gifOverlay.style.display = 'none'; // Hide overlay after fade out
+        });
+
+        // Set introShown in localStorage
+        localStorage.setItem('introShown', 'true');
+      } else {
+        // Hide the overlay if already shown
+        gifOverlay.style.display = 'none';
+      }
     } else {
       // Hide the overlay if not on index.html
       const gifOverlay = document.getElementById('gifOverlay');
