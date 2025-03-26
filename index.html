@@ -13,7 +13,9 @@
     }
 
     .button {
-      display: inline-block;
+      display: flex; /* Use flex for button */
+      justify-content: center; /* Center content in button */
+      align-items: center; /* Center content vertically */
       padding: 12px 24px; /* Increased padding for a bigger button */
       background-color: #007BFF; /* Blue background */
       color: white; /* White text for contrast */
@@ -23,6 +25,8 @@
       font-size: 18px; /* Increased font size */
       border: none; /* No border */
       margin: 5px; /* Space between buttons */
+      flex-grow: 1; /* Allow buttons to take equal space */
+      max-width: 150px; /* Limit button width */
     }
 
     .button:hover {
@@ -51,6 +55,12 @@
       padding: 20px; /* Add some padding */
     }
 
+    .button-container {
+      display: flex; /* Use flexbox for button container */
+      justify-content: space-between; /* Spread buttons across the line */
+      margin-top: 20px; /* Space above buttons */
+    }
+
     footer {
       text-align: center; /* Center text in footer */
       background-color: #add8e6; /* Light blue background for footer */
@@ -76,9 +86,12 @@
       <div class="hero">
         <h2>About Insanity</h2>
         <p>Insanity is a portable unblocked game and proxy site, providing access to a variety of games without restrictions. Our platform allows you to enjoy your favorite games from anywhere, whether you're at school, work, or home. With a user-friendly interface and a wide selection of games, you can dive right into the fun without any hassle. Plus, our proxy service ensures you can access blocked content safely and securely, keeping your online activities private and protected.</p>
-        <a href="g.html" class="button">Play Games</a>
-        <a href="proxy.html" class="button">Use Proxy</a>
-        <a href="partners.html" class="button">Partners</a>
+        
+        <div class="button-container">
+          <a href="g.html" class="button">Play Games</a>
+          <a href="proxy.html" class="button">Use Proxy</a>
+          <a href="partners.html" class="button">Partners</a>
+        </div>
       </div>
     </section>
   </main>
