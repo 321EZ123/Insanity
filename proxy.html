@@ -63,13 +63,6 @@
       font-size: 16px; /* Font size */
       background-color: #e0f7fa; /* Light blue background for input */
       color: #000; /* Black text for input */
-      transition: border-color 0.3s, box-shadow 0.3s; /* Transition effects */
-    }
-
-    .form__input:focus {
-      border-color: #0056b3; /* Darker blue on focus */
-      box-shadow: 0 0 5px rgba(0, 86, 179, 0.5); /* Shadow effect on focus */
-      outline: none; /* Remove default outline */
     }
 
     footer {
@@ -97,7 +90,7 @@
 
   <main>
     <section id="proxy" class="section">
-      <div style="position: relative; text-align: center; margin-top: 20px;">
+      <div style="position: relative;">
         <form id="uv-form">
           <input id="uv-search-engine" value="https://duckduckgo.com/?t=h_&q=%s&ia=web" type="hidden" />
           <input id="uv-address" type="text" placeholder="Search Google or type a URL" class="form__input" />
