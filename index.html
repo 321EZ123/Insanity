@@ -13,26 +13,24 @@
     }
 
     .button {
-      display: flex; /* Use flex for button */
+      display: inline-flex; /* Use inline-flex for button */
       justify-content: center; /* Center content in button */
       align-items: center; /* Center content vertically */
-      padding: 12px 16px; /* Adjusted padding for a longer button */
+      padding: 8px 12px; /* Adjusted padding for a sleeker button */
       background-color: #007BFF; /* Blue background */
       color: white; /* White text for contrast */
       text-decoration: none;
-      border-radius: 8px; /* Slightly larger border radius */
+      border-radius: 5px; /* Slightly smaller border radius */
       transition: background-color 0.3s, transform 0.3s; /* Added transform for hover effect */
-      font-size: 18px; /* Increased font size */
+      font-size: 16px; /* Adjusted font size for better readability */
       border: none; /* No border */
       margin: 5px; /* Space between buttons */
-      flex-grow: 1; /* Allow buttons to take equal space */
-      max-width: 120px; /* Limit button width */
-      min-width: 100px; /* Set minimum width for longer appearance */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
     }
 
     .button:hover {
       background-color: #0056b3; /* Darker blue on hover */
-      transform: scale(1.1); /* Slightly enlarge button on hover */
+      transform: scale(1.05); /* Slightly enlarge button on hover */
     }
 
     header {
