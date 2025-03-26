@@ -36,8 +36,7 @@
     header {
       display: flex; /* Use flexbox for header layout */
       align-items: center; /* Center items vertically */
-      justify-content: center; /* Center title */
-      border-bottom: 2px solid #0000ff; /* Blue divider for the navbar */
+      justify-content: space-between; /* Space between title and nav */
       padding: 10px; /* Added padding */
     }
 
@@ -45,7 +44,7 @@
       margin: 0; /* Remove margin for better centering */
       font-size: 26px; /* Adjust title size */
       text-shadow: 0 0 10px blue; /* Blue glow for the title */
-      text-align: center; /* Center text */
+      text-align: left; /* Align title to the left */
     }
 
     .hero {
@@ -72,7 +71,7 @@
 
   <header>
     <h1>Insanity</h1>
-    <nav>
+    <nav style="margin-left: auto;"> <!-- Added margin-left: auto to push nav to the right -->
       <ul>
         <li><a href="https://discord.com/invite/arcgZTV9zX" class="button" target="_blank" rel="noopener noreferrer">Join Discord</a></li>
       </ul>
@@ -82,7 +81,7 @@
   <main>
     <section id="home" class="section">
       <div class="hero">
-        <h2>About This Site:</h2> <!-- Changed text here -->
+        <h2>About This Site:</h2>
         <p>Insanity is a portable unblocked game and proxy site, providing access to a variety of games without restrictions. Our platform allows you to enjoy your favorite games from anywhere, whether you're at school, work, or home. With a user-friendly interface and a wide selection of games, you can dive right into the fun without any hassle. Plus, our proxy service ensures you can access blocked content safely and securely, keeping your online activities private and protected.</p>
         
         <div class="button-container">
@@ -95,7 +94,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Insanity Services. All rights reserved.</p>
+    <p>&copy; 2025 Insanity Games. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
