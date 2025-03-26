@@ -8,13 +8,14 @@
   <link rel="stylesheet" href="styles.css">
   <style>
     body {
-      color: lightblue; /* Change all text to light blue */
+      background-color: lightblue; /* Light blue background for the entire page */
+      color: #000; /* Black text for visibility */
     }
 
     .button {
       display: inline-block;
       padding: 8px 16px; /* Smaller padding */
-      background-color: lightblue; /* Light blue background */
+      background-color: #add8e6; /* Light blue background */
       color: #000; /* Black text for visibility */
       text-decoration: none;
       border-radius: 5px;
@@ -24,11 +25,38 @@
     }
 
     .button:hover {
-      background-color: #00bfff; /* Darker blue on hover */
+      background-color: #87ceeb; /* Lighter blue on hover */
       border-color: #0000ff; /* Keep blue border on hover */
     }
 
-    /* Styling for the logo image */
+    header {
+      display: flex; /* Use flexbox for header layout */
+      align-items: center; /* Center items vertically */
+      justify-content: space-between; /* Space between title and nav */
+      border-bottom: 2px solid #0000ff; /* Blue divider for the navbar */
+    }
+
+    h1 {
+      margin-right: 20px; /* Space between title and buttons */
+      font-size: 24px; /* Adjust title size as needed */
+      text-shadow: 0 0 10px blue; /* Blue glow for the title */
+    }
+
+    nav ul {
+      list-style: none; /* Remove default list style */
+      padding: 0; /* Remove default padding */
+      display: flex; /* Use flexbox for horizontal layout */
+      gap: 10px; /* Space between buttons */
+    }
+
+    nav ul li {
+      margin: 0; /* Remove default margin */
+    }
+
+    .hero {
+      text-align: center; /* Center the content in the hero section */
+    }
+
     .hero img {
       width: 150px;
       height: auto;
@@ -58,28 +86,11 @@
       pointer-events: none; /* Prevent interactions when hidden */
     }
 
-    header {
-      display: flex; /* Use flexbox for header layout */
-      align-items: center; /* Center items vertically */
-      justify-content: space-between; /* Space between title and nav */
-      border-bottom: 2px solid #0000ff; /* Blue divider for the navbar */
-    }
-
-    h1 {
-      margin-right: 20px; /* Space between title and buttons */
-      font-size: 24px; /* Adjust title size as needed */
-      text-shadow: 0 0 10px blue; /* Blue glow for the title */
-    }
-
-    nav ul {
-      list-style: none; /* Remove default list style */
-      padding: 0; /* Remove default padding */
-      display: flex; /* Use flexbox for horizontal layout */
-      gap: 10px; /* Space between buttons */
-    }
-
-    nav ul li {
-      margin: 0; /* Remove default margin */
+    footer {
+      text-align: center; /* Center text in footer */
+      background-color: #add8e6; /* Light blue background for footer */
+      padding: 1rem; /* Padding for footer */
+      border-top: 2px solid #0000ff; /* Blue divider for footer */
     }
   </style>
 </head>
@@ -104,7 +115,7 @@
         <h2>Insanity Games</h2>
         <!-- Logo Image -->
         <img src="images/logo.jpg" alt="Insanity Games Logo">
-        <p>Made by EZ123 on <a href="https://discord.com/invite/arcgZTV9zX" target="_blank" rel="noopener noreferrer">discord</a></p>
+        <p>Made by EZ123 on <a href="https://discord.com/invite/arcgZTV9zX" target="_blank" rel="noopener noreferrer" style="color: #0000ff;">discord</a></p>
       </div>
     </section>
   </main>
