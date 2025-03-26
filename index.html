@@ -46,18 +46,33 @@
   <main>
     <section id="home" class="section">
       <div class="hero">
-        <h2>Been's Games Hub</h2>
+        <h2>Insanity Games</h2>
         <!-- Logo Image -->
         <img src="images/logo.jpg" alt="Been's Hub Logo">
-        <p>Made by been on <a href="https://discord.gg/sNP3h6qzba" target="_blank" rel="noopener noreferrer">discord</a></p>
+        <p>Made by EZ123 on <a href="https://discord.com/invite/arcgZTV9zX" target="_blank" rel="noopener noreferrer">discord</a></p>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2024 Been's Hub. All rights reserved.</p>
+    <p>&copy; 2025 Insanity Services All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    // Change to a static image after the GIF has played
+    window.onload = function() {
+      const body = document.body;
+      const gifDuration = 5000; // Duration in milliseconds (adjust as needed)
+      const staticImage = 'images/static-bg.jpg'; // Path to your static image
+
+      setTimeout(() => {
+        body.style.backgroundImage = `url('${staticImage}')`;
+        body.style.backgroundRepeat = 'no-repeat';
+        body.style.backgroundSize = 'cover';
+        body.style.backgroundPosition = 'center';
+      }, gifDuration);
+    };
+  </script>
 </body>
 </html>
