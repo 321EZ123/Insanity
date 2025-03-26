@@ -1,4 +1,5 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +10,9 @@
   <style>
     body {
       background-color: #add8e6; /* Light blue background for the entire page */
-      color: #000; /* Black text for visibility */
+      color: #ADD8E6; /* Light blue text for visibility */
+      font-family: Arial, sans-serif; /* Set a clean font */
+      line-height: 1.6; /* Improved line height for readability */
     }
 
     header {
@@ -17,11 +20,12 @@
       align-items: center; /* Center items vertically */
       justify-content: space-between; /* Space between title and nav */
       border-bottom: 2px solid #0000ff; /* Blue divider for the header */
+      padding: 10px; /* Add padding for spacing */
     }
 
     h1 {
       margin-right: 20px; /* Space between title and buttons */
-      font-size: 24px; /* Adjust title size as needed */
+      font-size: 28px; /* Larger title size */
       color: #000; /* Black text for header */
     }
 
@@ -58,46 +62,15 @@
       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
       gap: 2rem;
       justify-items: center;
-      margin-top: 20px; /* Add margin for spacing */
+      margin: 20px auto; /* Center the grid */
       text-align: center; /* Center text */
-      color: #000; /* Black text for visibility */
+      color: #ADD8E6; /* Light blue text for visibility */
     }
 
     .partner-grid p {
-      color: #000; /* Black text for visibility */
-      font-size: 16px; /* Adjust font size */
-    }
-
-    .partner-card {
-      background-color: #add8e6; /* Light blue background for partner cards */
-      border: 2px solid #0000ff; /* Blue border for partner cards */
-      border-radius: 8px;
-      padding: 1rem;
-      text-align: center;
-      box-shadow: 0 0 5px rgba(0, 0, 255, 0.3); /* Shadow effect */
-      transition: all 0.3s ease;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 150px;
-      height: 150px;
-    }
-
-    .partner-card a {
-      display: block;
-      width: 100%;
-      height: 100%;
-    }
-
-    .partner-card img {
-      width: 100%;
-      height: 100%;
-      object-fit: fill;
-      transition: transform 0.3s ease;
-    }
-
-    .partner-card:hover img {
-      transform: scale(1.1);
+      font-size: 18px; /* Adjust font size */
+      margin-bottom: 20px; /* Space below the paragraph */
+      font-weight: bold; /* Make text bold */
     }
 
     footer {
@@ -105,13 +78,13 @@
       border-top: 2px solid #0000ff; /* Blue divider for footer */
       text-align: center; /* Center text in footer */
       padding: 1rem; /* Padding for footer */
-      color: #000; /* Black text for footer */
+      color: #ADD8E6; /* Light blue text for footer */
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Insanity<h1>
+    <h1>Insanity Games</h1>
     <nav>
       <ul>
         <li><a href="index.html" class="button">Home</a></li>
@@ -126,7 +99,7 @@
   <main>
     <section id="partners" class="section">
       <div class="partner-grid">
-        <p>No Partners Currently, Apply in our Discord to Become One.</p>
+        <p>No partners currently. Apply in our Discord to become one!</p>
       </div>
     </section>
   </main>
