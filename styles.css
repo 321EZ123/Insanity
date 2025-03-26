@@ -18,7 +18,10 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: var(--bg-color);
+  background-image: url('images/Background.gif'); /* Set the background GIF */
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
   color: var(--text-color);
   line-height: 1.6;
 }
