@@ -7,8 +7,19 @@ function openGame(name, url) {
         <head>
           <title>${name}</title>
           <style>
-            body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
-            embed { width: 100%; height: 100%; border: none; }
+            body, html { 
+              margin: 0; 
+              padding: 0; 
+              height: 100%; 
+              overflow: hidden; 
+              background-color: #add8e6; /* Light blue background */
+              color: #000; /* Black text for visibility */
+            }
+            embed { 
+              width: 100%; 
+              height: 100%; 
+              border: none; 
+            }
           </style>
         </head>
         <body>
@@ -106,13 +117,13 @@ document.addEventListener('DOMContentLoaded', function() {
     { title: "Rayvon Party", url: "https://rayvon.was-at-the-diddy.party/" },
     { title: "Minecraft FR", url: "https://fr.minecraft.id.lv/" },
     { title: "Pete Zah", url: "https://petezahgames.com/" },
-  { title: "Pete Zah", url: "https://supergisfire.com/" },
-  { title: "Pete Zah", url: "https://petezahlowtaper.web.app/" },
-  { title: "Pete Zah", url: "https://petezahgames8.web.app/" },
-  { title: "Pete Zah", url: "https://petezah.netlify.app/" },
-  { title: "Pete Zah", url: "https://petezah.global.ssl.fastly.net/" },
-  { title: "Pete Zah", url: "https://petezahgames9.web.app/" },
-  { title: "Pete Zah", url: "https://petezahgames10.web.app/" }
+    { title: "Pete Zah", url: "https://supergisfire.com/" },
+    { title: "Pete Zah", url: "https://petezahlowtaper.web.app/" },
+    { title: "Pete Zah", url: "https://petezahgames8.web.app/" },
+    { title: "Pete Zah", url: "https://petezah.netlify.app/" },
+    { title: "Pete Zah", url: "https://petezah.global.ssl.fastly.net/" },
+    { title: "Pete Zah", url: "https://petezahgames9.web.app/" },
+    { title: "Pete Zah", url: "https://petezahgames10.web.app/" }
   ];
 
   const linksPerPage = 15;
@@ -139,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function() {
       linkElement.href = link.url;
       linkElement.className = 'link-card';
       linkElement.target = '_blank';
-      linkElement.textContent = link.url;
+      linkElement.textContent = link.title; // Changed to display the title
 
       linksContainer.appendChild(linkElement);
     }
