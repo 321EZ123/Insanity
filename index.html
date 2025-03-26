@@ -14,42 +14,36 @@
 
     .button {
       display: inline-block;
-      padding: 8px 16px; /* Smaller padding */
-      background-color: #add8e6; /* Light blue background */
-      color: #000; /* Black text for visibility */
+      padding: 10px 20px; /* Increased padding for a better look */
+      background-color: #4CAF50; /* Green background */
+      color: white; /* White text for contrast */
       text-decoration: none;
       border-radius: 5px;
-      transition: background-color 0.3s;
-      font-size: 14px; /* Smaller font size */
-      border: 2px solid #0000ff; /* Blue border */
+      transition: background-color 0.3s, transform 0.3s; /* Added transform for hover effect */
+      font-size: 16px; /* Slightly larger font size */
+      border: none; /* No border */
       margin: 5px; /* Space between buttons */
     }
 
     .button:hover {
-      background-color: #87ceeb; /* Lighter blue on hover */
-      border-color: #0000ff; /* Keep blue border on hover */
+      background-color: #45a049; /* Darker green on hover */
+      transform: scale(1.05); /* Slightly enlarge button on hover */
     }
 
     header {
       display: flex; /* Use flexbox for header layout */
       align-items: center; /* Center items vertically */
-      justify-content: space-between; /* Space between title and nav */
+      justify-content: flex-start; /* Align title to the left */
       border-bottom: 2px solid #0000ff; /* Blue divider for the navbar */
+      padding: 10px; /* Added padding */
     }
 
     h1 {
       margin-right: 20px; /* Space between title and buttons */
-      font-size: 24px; /* Adjust title size as needed */
+      font-size: 26px; /* Adjust title size */
       text-shadow: 0 0 10px blue; /* Blue glow for the title */
-      text-align: left; /* Align title to the left */
       flex-grow: 1; /* Allow title to take available space */
-    }
-
-    nav ul {
-      list-style: none; /* Remove default list style */
-      padding: 0; /* Remove default padding */
-      display: flex; /* Use flexbox for horizontal layout */
-      gap: 10px; /* Space between buttons */
+      text-align: left; /* Align title to the left */
     }
 
     .hero {
@@ -81,9 +75,10 @@
     <section id="home" class="section">
       <div class="hero">
         <h2>About Insanity</h2>
-        <p>Insanity is a portable unblocked game and proxy site, providing access to a variety of games without restrictions.</p>
+        <p>Insanity is a portable unblocked game and proxy site, providing access to a variety of games without restrictions. Our platform allows you to enjoy your favorite games from anywhere, whether you're at school, work, or home. With a user-friendly interface and a wide selection of games, you can dive right into the fun without any hassle. Plus, our proxy service ensures you can access blocked content safely and securely, keeping your online activities private and protected.</p>
         <a href="g.html" class="button">Play Games</a>
         <a href="proxy.html" class="button">Use Proxy</a>
+        <a href="partners.html" class="button">Partners</a>
       </div>
     </section>
   </main>
