@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Been's Hub</title>
+  <title>Insanity Games</title>
   <link rel="stylesheet" href="styles.css">
   <style>
     .button {
@@ -56,7 +56,7 @@
   <div id="gifOverlay"></div> <!-- GIF overlay -->
 
   <header>
-    <h1>Been's Hub</h1>
+    <h1>Insanity Games</h1>
     <nav>
       <ul>
         <li><a href="index.html" class="active">Home</a></li>
@@ -71,16 +71,16 @@
   <main>
     <section id="home" class="section">
       <div class="hero">
-        <h2>Been's Games Hub</h2>
+        <h2>Insanity Games</h2>
         <!-- Logo Image -->
         <img src="images/logo.jpg" alt="Been's Hub Logo">
-        <p>Made by been on <a href="https://discord.gg/sNP3h6qzba" target="_blank" rel="noopener noreferrer">discord</a></p>
+        <p>Made by EZ123 on <a href="https://discord.com/invite/arcgZTV9zX" target="_blank" rel="noopener noreferrer">discord</a></p>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2024 Been's Hub. All rights reserved.</p>
+    <p>&copy; 2025 Insanity Games. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
@@ -93,14 +93,16 @@
 
       setTimeout(() => {
         gifOverlay.classList.add('hidden'); // Start fade out
-        setTimeout(() => {
-          gifOverlay.style.display = 'none'; // Hide overlay after fade out
-          document.body.style.backgroundImage = `url('${staticImage}')`;
-          document.body.style.backgroundRepeat = 'no-repeat';
-          document.body.style.backgroundSize = 'cover';
-          document.body.style.backgroundPosition = 'center';
-        }, 1000); // Match this to the opacity transition duration
+        document.body.style.backgroundImage = `url('${staticImage}')`;
+        document.body.style.backgroundRepeat = 'no-repeat';
+        document.body.style.backgroundSize = 'cover';
+        document.body.style.backgroundPosition = 'center';
       }, gifDuration);
+
+      // Remove the overlay after fade out transition
+      gifOverlay.addEventListener('transitionend', () => {
+        gifOverlay.style.display = 'none'; // Hide overlay after fade out
+      });
     };
   </script>
 </body>
