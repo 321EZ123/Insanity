@@ -85,8 +85,8 @@
 
   <script src="script.js"></script>
   <script>
-    // Change to a static image after the GIF has played
-    window.onload = function() {
+    // Show intro only on index.html
+    if (window.location.pathname.endsWith('index.html')) {
       const gifOverlay = document.getElementById('gifOverlay');
       const gifDuration = 5000; // Duration in milliseconds (adjust as needed)
       const staticImage = 'images/static-bg.jpg'; // Path to your static image
@@ -103,7 +103,11 @@
       gifOverlay.addEventListener('transitionend', () => {
         gifOverlay.style.display = 'none'; // Hide overlay after fade out
       });
-    };
+    } else {
+      // Hide the overlay if not on index.html
+      const gifOverlay = document.getElementById('gifOverlay');
+      gifOverlay.style.display = 'none';
+    }
   </script>
 </body>
 </html>
