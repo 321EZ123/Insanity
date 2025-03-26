@@ -1,13 +1,13 @@
 :root {
-  --primary-color: #00b200; /* Adjusted for light blue */
+  --primary-color: #0000ff; /* Blue for primary elements */
   --button-bg: #000000; /* Black for buttons */
-  --button-hover: #004d00; /* Darker green on hover */
+  --button-hover: #0056b3; /* Darker blue on hover */
   --hover-color: rgba(173, 216, 230, 0.2); /* Light blue with transparency */
   --bg-color: #000000; /* Black for page backgrounds */
   --card-bg: #0a0a0a; /* Dark background for cards */
   --text-color: lightblue; /* Light blue for text */
-  --shadow-color: rgba(0, 255, 0, 0.3);
-  --border-glow: #004d00; /* Darker green for borders */
+  --shadow-color: rgba(0, 0, 255, 0.3); /* Blue shadow color */
+  --border-glow: #0056b3; /* Darker blue for borders */
 }
 
 * {
@@ -187,7 +187,7 @@ section h2 {
 }
 
 .button:hover {
-  background-color: var(--button-hover);
+  background-color: var(--button-hover); /* Darker green on hover */
   box-shadow: 0 0 8px var(--border-glow);
   border-color: var(--button-bg);
 }
