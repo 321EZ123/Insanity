@@ -14,16 +14,18 @@
     .button {
       display: inline-block;
       padding: 8px 16px; /* Smaller padding */
-      background-color: #006400; /* Darker green */
-      color: white;
+      background-color: lightblue; /* Light blue background */
+      color: #000; /* Black text for visibility */
       text-decoration: none;
       border-radius: 5px;
       transition: background-color 0.3s;
       font-size: 14px; /* Smaller font size */
+      border: 2px solid #0000ff; /* Blue border */
     }
 
     .button:hover {
-      background-color: #004d00; /* Even darker on hover */
+      background-color: #00bfff; /* Darker blue on hover */
+      border-color: #0000ff; /* Keep blue border on hover */
     }
 
     /* Styling for the logo image */
@@ -60,11 +62,13 @@
       display: flex; /* Use flexbox for header layout */
       align-items: center; /* Center items vertically */
       justify-content: space-between; /* Space between title and nav */
+      border-bottom: 2px solid #0000ff; /* Blue divider for the navbar */
     }
 
     h1 {
       margin-right: 20px; /* Space between title and buttons */
       font-size: 24px; /* Adjust title size as needed */
+      text-shadow: 0 0 10px blue; /* Blue glow for the title */
     }
 
     nav ul {
@@ -99,7 +103,7 @@
       <div class="hero">
         <h2>Insanity Games</h2>
         <!-- Logo Image -->
-        <img src="images/logo.jpg" alt="Been's Hub Logo">
+        <img src="images/logo.jpg" alt="Insanity Games Logo">
         <p>Made by EZ123 on <a href="https://discord.com/invite/arcgZTV9zX" target="_blank" rel="noopener noreferrer">discord</a></p>
       </div>
     </section>
