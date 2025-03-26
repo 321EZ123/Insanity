@@ -7,13 +7,14 @@
   <link rel="stylesheet" href="styles.css">
   <style>
     body {
-      color: lightblue; /* Change all text to light blue */
+      background-color: #add8e6; /* Light blue background for the entire page */
+      color: #000; /* Black text for visibility */
     }
 
     .button {
       display: inline-block;
       padding: 8px 16px; /* Smaller padding */
-      background-color: lightblue; /* Light blue background */
+      background-color: #add8e6; /* Light blue background */
       color: #000; /* Black text for visibility */
       text-decoration: none;
       border-radius: 5px;
@@ -23,7 +24,7 @@
     }
 
     .button:hover {
-      background-color: #00bfff; /* Darker blue on hover */
+      background-color: #87ceeb; /* Lighter blue on hover */
       border-color: #0000ff; /* Keep blue border on hover */
     }
 
@@ -31,11 +32,13 @@
       display: flex; /* Use flexbox for header layout */
       align-items: center; /* Center items vertically */
       justify-content: space-between; /* Space between title and nav */
+      border-bottom: 2px solid #0000ff; /* Blue divider for the navbar */
     }
 
     h1 {
       margin-right: 20px; /* Space between title and buttons */
       font-size: 24px; /* Adjust title size as needed */
+      text-shadow: 0 0 10px blue; /* Blue glow for the title */
     }
 
     nav ul {
@@ -68,6 +71,14 @@
     .game-card:hover {
       transform: translateY(-5px); /* Lift effect on hover */
       box-shadow: 0 0 15px rgba(0, 255, 0, 0.5); /* Increased shadow on hover */
+    }
+
+    footer {
+      background-color: #add8e6; /* Light blue background for footer */
+      border-top: 2px solid #0000ff; /* Blue divider for footer */
+      text-align: center; /* Center text in footer */
+      padding: 1rem; /* Padding for footer */
+      color: #000; /* Black text for footer */
     }
   </style>
 </head>
