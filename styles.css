@@ -1,11 +1,11 @@
 :root {
   --primary-color: #00b200; /* Adjusted for light blue */
-  --button-bg: #add8e6; /* Light blue for buttons */
-  --button-hover: #87ceeb; /* Lighter blue on hover */
+  --button-bg: #000000; /* Black for buttons */
+  --button-hover: #004d00; /* Darker green on hover */
   --hover-color: rgba(173, 216, 230, 0.2); /* Light blue with transparency */
-  --bg-color: #add8e6; /* Light blue background */
-  --card-bg: #e0f7fa; /* Light blue card background */
-  --text-color: #000; /* Black text for visibility */
+  --bg-color: #000000; /* Black for page backgrounds */
+  --card-bg: #0a0a0a; /* Dark background for cards */
+  --text-color: lightblue; /* Light blue for text */
   --shadow-color: rgba(0, 255, 0, 0.3);
   --border-glow: #004d00; /* Darker green for borders */
 }
@@ -18,8 +18,11 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #add8e6; /* Light blue background for the entire page */
-  color: var(--text-color); /* Black text for body text */
+  background-image: url('images/static-bg.png'); /* Set the background image */
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  color: var(--text-color); /* Use light blue for body text */
   line-height: 1.6;
 }
 
@@ -27,19 +30,18 @@ header {
   padding: 1.5rem;
   border-bottom: 2px solid var(--primary-color);
   box-shadow: 0 0 10px var(--shadow-color);
-  background-color: #add8e6; /* Light blue header background */
 }
 
 header h1 {
   text-align: center;
   margin-bottom: 1rem;
-  color: var(--text-color); /* Black text for header */
+  color: var(--text-color); /* Light blue for header text */
 }
 
 form {
   text-align: center;
   margin-bottom: 1rem;
-  color: var(--text-color); /* Black text for form */
+  color: var(--text-color); /* Light blue for form text */
 }
 
 form input {
@@ -47,8 +49,8 @@ form input {
   width: 300px; /* Set a width for the input */
   border: 2px solid var(--primary-color);
   border-radius: 5px; /* Rounded corners */
-  background-color: #e0f7fa; /* Light blue for input box */
-  color: var(--text-color); /* Black text for input */
+  background-color: var(--card-bg);
+  color: var(--text-color); /* Light blue for input text */
   margin-right: 0.5rem;
 }
 
@@ -60,7 +62,7 @@ nav ul {
 }
 
 nav a {
-  color: var(--text-color); /* Black text for nav links */
+  color: var(--text-color); /* Light blue for nav links */
   text-decoration: none;
   font-size: 1.2rem;
   padding: 0.5rem 1rem;
@@ -69,7 +71,7 @@ nav a {
 }
 
 nav a:hover, nav a.active {
-  background-color: var(--hover-color); /* Light blue hover effect */
+  background-color: var(--hover-color);
   box-shadow: 0 0 10px var(--shadow-color);
 }
 
@@ -86,7 +88,7 @@ main {
 section h2 {
   text-align: center;
   margin-bottom: 2rem;
-  color: var(--text-color); /* Black text for section headings */
+  color: var(--text-color); /* Light blue for section headings */
 }
 
 /* Home Page */
@@ -97,16 +99,16 @@ section h2 {
 
 .hero h2 {
   font-size: 2.5rem;
-  color: var(--text-color); /* Black text for hero headings */
+  color: var(--text-color); /* Light blue for hero headings */
 }
 
 .hero p {
   font-size: 1.2rem;
-  color: var(--text-color); /* Black text for hero paragraphs */
+  color: var(--text-color); /* Light blue for hero paragraphs */
 }
 
 .hero a {
-  color: var(--text-color); /* Black text for hero links */
+  color: var(--text-color); /* Light blue for hero links */
 }
 
 .features {
@@ -116,7 +118,7 @@ section h2 {
 }
 
 .feature-card {
-  background-color: var(--card-bg); /* Light blue card background */
+  background-color: var(--card-bg);
   border: 2px solid var(--primary-color);
   border-radius: 8px;
   padding: 2rem;
@@ -131,12 +133,12 @@ section h2 {
 }
 
 .feature-card h3 {
-  color: var(--text-color); /* Black text for feature card headings */
+  color: var(--text-color); /* Light blue for feature card headings */
 }
 
 .feature-card p {
   margin-bottom: 1.5rem;
-  color: var(--text-color); /* Black text for feature card paragraphs */
+  color: var(--text-color); /* Light blue for feature card paragraphs */
 }
 
 /* Games Section */
@@ -147,7 +149,7 @@ section h2 {
 }
 
 .game-card {
-  background-color: var(--card-bg); /* Light blue card background */
+  background-color: var(--card-bg);
   border: 2px solid var(--primary-color);
   border-radius: 8px;
   padding: 1.5rem;
@@ -161,19 +163,19 @@ section h2 {
 }
 
 .game-card h3 {
-  color: var(--text-color); /* Black text for game card headings */
+  color: var(--text-color); /* Light blue for game card headings */
 }
 
 .game-card p {
   margin-bottom: 1rem;
-  color: var(--text-color); /* Black text for game card paragraphs */
+  color: var(--text-color); /* Light blue for game card paragraphs */
 }
 
 .button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: var(--button-bg); /* Light blue for buttons */
-  color: var(--text-color); /* Black text for button text */
+  background-color: var(--button-bg); /* Black for buttons */
+  color: var(--text-color); /* Light blue for button text */
   text-decoration: none;
   border-radius: 5px;
   transition: all 0.3s ease;
@@ -185,7 +187,7 @@ section h2 {
 }
 
 .button:hover {
-  background-color: var(--button-hover); /* Lighter blue on hover */
+  background-color: var(--button-hover);
   box-shadow: 0 0 8px var(--border-glow);
   border-color: var(--button-bg);
 }
@@ -199,7 +201,7 @@ section h2 {
 }
 
 .link-card {
-  background-color: var(--card-bg); /* Light blue for link cards */
+  background-color: var(--card-bg); /* Dark background for link cards */
   border: 2px solid var(--primary-color);
   border-radius: 8px;
   padding: 1rem;
@@ -209,13 +211,13 @@ section h2 {
   display: flex;
   align-items: center;
   min-height: 60px;
-  color: var(--text-color); /* Black text for link card text */
+  color: var(--text-color); /* Light blue for link card text */
   text-decoration: none;
   text-shadow: 0 0 2px var(--primary-color);
 }
 
 .link-card:hover {
-  background-color: var(--hover-color); /* Light blue hover effect */
+  background-color: var(--hover-color);
   transform: scale(1.05);
 }
 
@@ -232,7 +234,7 @@ section h2 {
 }
 
 #pageInfo, #pageInfoBottom {
-  color: var(--text-color); /* Black text for pagination */
+  color: var(--text-color); /* Light blue for pagination text */
 }
 
 /* Footer */
