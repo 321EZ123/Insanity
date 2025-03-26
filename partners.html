@@ -7,11 +7,53 @@
   <title>Partners - Insanity Games</title>
   <link rel="stylesheet" href="styles.css">
   <style>
+    body {
+      color: lightblue; /* Change all text to light blue */
+    }
+
+    header {
+      display: flex; /* Use flexbox for header layout */
+      align-items: center; /* Center items vertically */
+      justify-content: space-between; /* Space between title and nav */
+    }
+
+    h1 {
+      margin-right: 20px; /* Space between title and buttons */
+      font-size: 24px; /* Adjust title size as needed */
+    }
+
+    nav ul {
+      list-style: none; /* Remove default list style */
+      padding: 0; /* Remove default padding */
+      display: flex; /* Use flexbox for horizontal layout */
+      gap: 10px; /* Space between buttons */
+    }
+
+    nav ul li {
+      margin: 0; /* Remove default margin */
+    }
+
+    .button {
+      display: inline-block;
+      padding: 8px 16px; /* Smaller padding */
+      background-color: #006400; /* Darker green */
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      font-size: 14px; /* Smaller font size */
+    }
+
+    .button:hover {
+      background-color: #004d00; /* Even darker on hover */
+    }
+
     .partner-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
       gap: 2rem;
       justify-items: center;
+      margin-top: 20px; /* Add margin for spacing */
     }
 
     .partner-card {
@@ -52,10 +94,10 @@
     <h1>Insanity Games</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="g.html">Games</a></li>
-        <li><a href="proxy.html">Proxy</a></li>
-        <li><a href="partners.html" class="active">Partners</a></li>
+        <li><a href="index.html" class="button">Home</a></li>
+        <li><a href="g.html" class="button">Games</a></li>
+        <li><a href="proxy.html" class="button">Proxy</a></li>
+        <li><a href="partners.html" class="active button">Partners</a></li>
       </ul>
     </nav>
   </header>
@@ -78,42 +120,42 @@
             <img src="images/gtube.png" alt="Partner 3">
           </a>
         </div>
-             <div class="partner-card">
+        <div class="partner-card">
           <a href="https://sunnys.pro" target="_blank">
-            <img src="images/sunnys.jpg" alt="Partner 3">
+            <img src="images/sunnys.jpg" alt="Partner 4">
           </a>
         </div>
-                   <div class="partner-card">
+        <div class="partner-card">
           <a href="https://petezahgames.com" target="_blank">
-            <img src="images/petezah.png" alt="Partner 3">
+            <img src="images/petezah.png" alt="Partner 5">
           </a>
         </div>
-                         <div class="partner-card">
+        <div class="partner-card">
           <a href="https://purpleutilities.xyz/" target="_blank">
-            <img src="images/lounge.jpg" alt="Partner 3">
+            <img src="images/lounge.jpg" alt="Partner 6">
           </a>
         </div>
-                              <div class="partner-card">
-          <a href="https://sites.google.com/view/ultimate-arcade 
-" target="_blank">
-            <img src="images/ulti.png" alt="Partner 3">
+        <div class="partner-card">
+          <a href="https://sites.google.com/view/ultimate-arcade" target="_blank">
+            <img src="images/ulti.png" alt="Partner 7">
           </a>
         </div>
-                                   <div class="partner-card">
+        <div class="partner-card">
           <a href="https://benrogo.net" target="_blank">
-            <img src="images/IMG_9469.jpg" alt="Partner 3">
+            <img src="images/IMG_9469.jpg" alt="Partner 8">
           </a>
         </div>
-                                                   <div class="partner-card">
+        <div class="partner-card">
           <a href="https://boredomarcade.xyz" target="_blank">
-            <img src="images/boredom.png" alt="Partner 3">
+            <img src="images/boredom.png" alt="Partner 9">
           </a>
         </div>
-                                                      <div class="partner-card">
+        <div class="partner-card">
           <a href="https://bliss-cloud.space/" target="_blank">
-            <img src="images/bliss.png" alt="Partner 3">
+            <img src="images/bliss.png" alt="Partner 10">
           </a>
         </div>
+      </div>
     </section>
   </main>
 
