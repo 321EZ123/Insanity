@@ -67,22 +67,16 @@
       color: #000; /* Black text for input */
     }
 
-    .quote-container {
-      text-align: center; /* Center the quote */
-      margin: 20px 0; /* Margin around the quote container */
-      font-size: 18px; /* Font size for the quote */
-      color: #000; /* Black text for the quote */
-    }
-
     .quote-button {
+      display: block; /* Make it a block element */
       padding: 10px 20px; /* Button padding */
       border: none; /* No border */
       border-radius: 5px; /* Rounded corners */
       background-color: #0000ff; /* Blue background */
       color: #fff; /* White text */
       cursor: pointer; /* Pointer cursor on hover */
-      font-size: 16px; /* Font size */
-      margin-top: 10px; /* Space above the button */
+      font-size: 18px; /* Font size */
+      margin: 20px auto; /* Center the button */
       transition: background-color 0.3s; /* Transition for hover effect */
     }
 
@@ -116,9 +110,8 @@
   <main>
     <section id="proxy" class="section">
       <h2 style="text-align: center;">Insanity Search</h2>
-      <div class="quote-container" id="quoteContainer">
-        <p id="quote">"Click the button to get a random quote!"</p>
-        <button class="quote-button" id="quoteButton">Get Quote</button>
+      <div style="text-align: center;">
+        <button class="quote-button" id="quoteButton">"Click for a quote!"</button>
       </div>
       <div style="position: relative; text-align: center;">
         <form id="uv-form">
@@ -132,7 +125,7 @@
   <footer>
     <p>&copy; 2025 Insanity Services. All rights reserved.</p>
   </footer>
-  
+
   <script>
     const quotes = [
       "The only way to do great work is to love what you do. - Steve Jobs",
@@ -145,7 +138,7 @@
 
     document.getElementById('quoteButton').addEventListener('click', function() {
       const randomIndex = Math.floor(Math.random() * quotes.length);
-      document.getElementById('quote').innerText = quotes[randomIndex];
+      this.innerText = quotes[randomIndex]; // Change button text to a random quote
     });
   </script>
 </body>
