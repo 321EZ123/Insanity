@@ -26,7 +26,12 @@
       font-size: 26px; /* Adjust title size */
       text-shadow: 0 0 10px blue; /* Blue glow for the title */
       text-align: left; /* Align title to the left */
-      width: 100%; /* Ensure title takes full width */
+      width: auto; /* Ensure title takes minimum width */
+    }
+
+    nav {
+      flex-grow: 1; /* Allow nav to take available space */
+      text-align: right; /* Align nav items to the right */
     }
 
     nav ul {
@@ -34,6 +39,7 @@
       padding: 0; /* Remove default padding */
       display: flex; /* Use flexbox for horizontal layout */
       gap: 10px; /* Space between buttons */
+      justify-content: flex-end; /* Align buttons to the right */
     }
 
     nav ul li {
