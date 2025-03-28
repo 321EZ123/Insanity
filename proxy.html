@@ -67,6 +67,29 @@
       color: #000; /* Black text for input */
     }
 
+    .quote-container {
+      text-align: center; /* Center the quote */
+      margin: 20px 0; /* Margin around the quote container */
+      font-size: 18px; /* Font size for the quote */
+      color: #000; /* Black text for the quote */
+    }
+
+    .quote-button {
+      padding: 10px 20px; /* Button padding */
+      border: none; /* No border */
+      border-radius: 5px; /* Rounded corners */
+      background-color: #0000ff; /* Blue background */
+      color: #fff; /* White text */
+      cursor: pointer; /* Pointer cursor on hover */
+      font-size: 16px; /* Font size */
+      margin-top: 10px; /* Space above the button */
+      transition: background-color 0.3s; /* Transition for hover effect */
+    }
+
+    .quote-button:hover {
+      background-color: #00008b; /* Darker blue on hover */
+    }
+
     footer {
       background-color: #add8e6; /* Light blue background for footer */
       border-top: 2px solid #0000ff; /* Blue divider for footer */
@@ -92,7 +115,11 @@
 
   <main>
     <section id="proxy" class="section">
-      <h2 style="text-align: center;">Insanity Search</h2> <!-- Added title here -->
+      <h2 style="text-align: center;">Insanity Search</h2>
+      <div class="quote-container" id="quoteContainer">
+        <p id="quote">"Click the button to get a random quote!"</p>
+        <button class="quote-button" id="quoteButton">Get Quote</button>
+      </div>
       <div style="position: relative; text-align: center;">
         <form id="uv-form">
           <input id="uv-search-engine" value="https://duckduckgo.com/?t=h_&q=%s&ia=web" type="hidden" />
@@ -105,11 +132,21 @@
   <footer>
     <p>&copy; 2025 Insanity Services. All rights reserved.</p>
   </footer>
-  <script src="static/uv/uv.bundle.js" defer></script>
-  <script src="static/uv/uv.config.js" defer></script>
-  <script src="static/register-sw.js" defer></script>
-  <script src="static/search.js" defer></script>
-  <script src="static/index.js" defer></script>
-  <script src="script.js"></script>
+  
+  <script>
+    const quotes = [
+      "The only way to do great work is to love what you do. - Steve Jobs",
+      "Life is what happens when you're busy making other plans. - John Lennon",
+      "Get busy living or get busy dying. - Stephen King",
+      "You only live once, but if you do it right, once is enough. - Mae West",
+      "In the end, we will remember not the words of our enemies, but the silence of our friends. - Martin Luther King Jr.",
+      "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment. - Ralph Waldo Emerson"
+    ];
+
+    document.getElementById('quoteButton').addEventListener('click', function() {
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      document.getElementById('quote').innerText = quotes[randomIndex];
+    });
+  </script>
 </body>
 </html>
