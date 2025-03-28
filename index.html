@@ -26,6 +26,7 @@
       font-size: 26px; /* Adjust title size */
       text-shadow: 0 0 10px blue; /* Blue glow for the title */
       text-align: left; /* Align title to the left */
+      width: 100%; /* Ensure title takes full width */
     }
 
     nav ul {
@@ -59,10 +60,21 @@
     }
 
     .hero {
-      text-align: left; /* Align content to the left */
+      display: flex; /* Use flexbox for layout */
+      align-items: center; /* Center items vertically */
       padding: 20px; /* Add some padding */
       max-width: 800px; /* Limit width for better readability */
       margin: 0; /* Ensure no margin to the sides */
+    }
+
+    .hero-text {
+      flex: 1; /* Take available space */
+      text-align: left; /* Align content to the left */
+    }
+
+    .hero-image {
+      max-width: 300px; /* Limit image width */
+      margin-left: 20px; /* Space between text and image */
     }
 
     footer {
@@ -92,8 +104,11 @@
   <main>
     <section id="home" class="section">
       <div class="hero">
-        <h2>Welcome to Insanity</h2>
-        <p>Insanity is a static unblocked game and proxy site, providing access to a variety of games without restrictions. Enjoy your favorite games from anywhere, whether at school, work, or home.</p>
+        <div class="hero-text">
+          <h2>Welcome to Insanity</h2>
+          <p>Insanity is a static unblocked game and proxy site, providing access to a variety of games without restrictions. Enjoy your favorite games from anywhere, whether at school, work, or home.</p>
+        </div>
+        <img src="images/download.png" alt="Download" class="hero-image"> <!-- Image reference -->
       </div>
     </section>
   </main>
