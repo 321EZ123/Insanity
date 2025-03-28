@@ -1,13 +1,13 @@
 :root {
-  --primary-color: #0000ff; /* Blue for primary elements */
-  --button-bg: #000000; /* Black for buttons */
-  --button-hover: #0056b3; /* Darker blue on hover */
-  --hover-color: rgba(173, 216, 230, 0.2); /* Light blue with transparency */
-  --bg-color: #000000; /* Black for page backgrounds */
-  --card-bg: #0a0a0a; /* Dark background for cards */
-  --text-color: lightblue; /* Light blue for text */
-  --shadow-color: rgba(0, 0, 255, 0.3); /* Blue shadow color */
-  --border-glow: #0056b3; /* Darker blue for borders */
+  --primary-color: #0000ff;
+  --button-bg: #000000;
+  --button-hover: #0056b3;
+  --hover-color: rgba(173, 216, 230, 0.2);
+  --bg-color: #000000;
+  --card-bg: #0a0a0a;
+  --text-color: lightblue;
+  --shadow-color: rgba(0, 0, 255, 0.3);
+  --border-glow: #0056b3;
 }
 
 * {
@@ -18,11 +18,11 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-image: url('images/static-bg.png'); /* Set the background image */
-  background-size: cover; /* Ensure the image covers the entire background */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-  color: var(--text-color); /* Use light blue for body text */
+  background-image: url('images/static-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--text-color);
   line-height: 1.6;
 }
 
@@ -35,22 +35,22 @@ header {
 header h1 {
   text-align: center;
   margin-bottom: 1rem;
-  color: var(--text-color); /* Light blue for header text */
+  color: var(--text-color);
 }
 
 form {
   text-align: center;
   margin-bottom: 1rem;
-  color: var(--text-color); /* Light blue for form text */
+  color: var(--text-color);
 }
 
 form input {
-  padding: 10px; /* Style the input box */
-  width: 300px; /* Set a width for the input */
+  padding: 10px;
+  width: 300px;
   border: 2px solid var(--primary-color);
-  border-radius: 5px; /* Rounded corners */
+  border-radius: 5px;
   background-color: var(--card-bg);
-  color: var(--text-color); /* Light blue for input text */
+  color: var(--text-color);
   margin-right: 0.5rem;
 }
 
@@ -62,7 +62,7 @@ nav ul {
 }
 
 nav a {
-  color: var(--text-color); /* Light blue for nav links */
+  color: var(--text-color);
   text-decoration: none;
   font-size: 1.2rem;
   padding: 0.5rem 1rem;
@@ -88,10 +88,9 @@ main {
 section h2 {
   text-align: center;
   margin-bottom: 2rem;
-  color: var(--text-color); /* Light blue for section headings */
+  color: var(--text-color);
 }
 
-/* Home Page */
 .hero {
   text-align: center;
   margin-bottom: 3rem;
@@ -99,16 +98,16 @@ section h2 {
 
 .hero h2 {
   font-size: 2.5rem;
-  color: var(--text-color); /* Light blue for hero headings */
+  color: var(--text-color);
 }
 
 .hero p {
   font-size: 1.2rem;
-  color: var(--text-color); /* Light blue for hero paragraphs */
+  color: var(--text-color);
 }
 
 .hero a {
-  color: var(--text-color); /* Light blue for hero links */
+  color: var(--text-color);
 }
 
 .features {
@@ -133,15 +132,14 @@ section h2 {
 }
 
 .feature-card h3 {
-  color: var(--text-color); /* Light blue for feature card headings */
+  color: var(--text-color);
 }
 
 .feature-card p {
   margin-bottom: 1.5rem;
-  color: var(--text-color); /* Light blue for feature card paragraphs */
+  color: var(--text-color);
 }
 
-/* Games Section */
 .game-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -163,19 +161,19 @@ section h2 {
 }
 
 .game-card h3 {
-  color: var(--text-color); /* Light blue for game card headings */
+  color: var(--text-color);
 }
 
 .game-card p {
   margin-bottom: 1rem;
-  color: var(--text-color); /* Light blue for game card paragraphs */
+  color: var(--text-color);
 }
 
 .button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: var(--button-bg); /* Black for buttons */
-  color: var(--text-color); /* Light blue for button text */
+  background-color: var(--button-bg);
+  color: var(--text-color);
   text-decoration: none;
   border-radius: 5px;
   transition: all 0.3s ease;
@@ -187,12 +185,11 @@ section h2 {
 }
 
 .button:hover {
-  background-color: var(--button-hover); /* Darker green on hover */
+  background-color: var(--button-hover);
   box-shadow: 0 0 8px var(--border-glow);
   border-color: var(--button-bg);
 }
 
-/* Links Section */
 .links-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -201,7 +198,7 @@ section h2 {
 }
 
 .link-card {
-  background-color: var(--card-bg); /* Dark background for link cards */
+  background-color: var(--card-bg);
   border: 2px solid var(--primary-color);
   border-radius: 8px;
   padding: 1rem;
@@ -211,7 +208,7 @@ section h2 {
   display: flex;
   align-items: center;
   min-height: 60px;
-  color: var(--text-color); /* Light blue for link card text */
+  color: var(--text-color);
   text-decoration: none;
   text-shadow: 0 0 2px var(--primary-color);
 }
@@ -221,7 +218,6 @@ section h2 {
   transform: scale(1.05);
 }
 
-/* Pagination */
 .pagination {
   display: flex;
   justify-content: space-between;
@@ -234,10 +230,9 @@ section h2 {
 }
 
 #pageInfo, #pageInfoBottom {
-  color: var(--text-color); /* Light blue for pagination text */
+  color: var(--text-color);
 }
 
-/* Footer */
 footer {
   text-align: center;
   padding: 2rem;
@@ -246,7 +241,6 @@ footer {
   box-shadow: 0 0 10px var(--shadow-color);
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
