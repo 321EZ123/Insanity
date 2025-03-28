@@ -9,129 +9,129 @@
   <link rel="stylesheet" href="styles.css">
   <style>
     body {
-      background-color: lightblue; /* Light blue background for the entire page */
-      color: #000; /* Black text for visibility */
-      margin: 0; /* Remove default margin */
+      background-color: lightblue;
+      color: #000;
+      margin: 0;
     }
 
     header {
-      display: flex; /* Use flexbox for header layout */
-      align-items: center; /* Center items vertically */
-      justify-content: space-between; /* Space between title and nav */
-      padding: 10px; /* Added padding */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
     }
 
     h1 {
-      margin: 0; /* Remove margin for better centering */
-      font-size: 26px; /* Adjust title size */
-      text-shadow: 0 0 10px blue; /* Blue glow for the title */
-      text-align: left; /* Align title to the left */
-      width: auto; /* Ensure title takes minimum width */
-      margin-left: 10px; /* Move the title slightly to the right */
+      margin: 0;
+      font-size: 26px;
+      text-shadow: 0 0 10px blue;
+      text-align: left;
+      width: auto;
+      margin-left: 10px;
     }
 
     nav {
-      flex-grow: 1; /* Allow nav to take available space */
-      text-align: right; /* Align nav items to the right */
+      flex-grow: 1;
+      text-align: right;
     }
 
     nav ul {
-      list-style: none; /* Remove default list style */
-      padding: 0; /* Remove default padding */
-      display: flex; /* Use flexbox for horizontal layout */
-      gap: 10px; /* Space between buttons */
-      justify-content: flex-end; /* Align buttons to the right */
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 10px;
+      justify-content: flex-end;
     }
 
     nav ul li {
-      margin: 0; /* Remove default margin */
+      margin: 0;
     }
 
     .nav-link {
       display: inline-block;
-      padding: 8px 16px; /* Smaller padding */
-      color: #ADD8E6; /* Light blue text */
-      text-decoration: none; /* No underline */
-      transition: transform 0.3s; /* Transition for bulge effect */
-      font-size: 14px; /* Smaller font size for links */
+      padding: 8px 16px;
+      color: #ADD8E6;
+      text-decoration: none;
+      transition: transform 0.3s;
+      font-size: 14px;
     }
 
     .nav-link.active {
-      text-decoration: underline; /* Underline for active link */
-      text-decoration-color: #0000ff; /* Dark blue underline */
-      color: #ADD8E6; /* Keep light blue text for active link */
+      text-decoration: underline;
+      text-decoration-color: #0000ff;
+      color: #ADD8E6;
     }
 
     .nav-link:hover {
-      transform: scale(1.1); /* Bulge effect on hover */
+      transform: scale(1.1);
     }
 
     .hero {
-      display: flex; /* Use flexbox for layout */
-      align-items: center; /* Center items vertically */
-      padding: 20px; /* Add some padding */
-      max-width: 800px; /* Limit width for better readability */
-      margin: 0 auto; /* Center the hero section */
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
     }
 
     .hero-text {
-      flex: 1; /* Take available space */
-      text-align: left; /* Align text to the left */
-      margin-right: 20px; /* Space between text and image */
+      flex: 1;
+      text-align: left;
+      margin-right: 20px;
     }
 
     .hero-image {
-      max-width: 400px; /* Increase image width */
-      width: 100%; /* Ensure responsiveness */
-      height: auto; /* Maintain aspect ratio */
+      max-width: 400px;
+      width: 100%;
+      height: auto;
     }
 
     .button-container {
-      margin-top: 20px; /* Space above buttons */
-      display: flex; /* Use flexbox for button layout */
-      gap: 20px; /* Space between buttons */
-      justify-content: center; /* Center buttons */
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
     }
 
     .button {
-      padding: 10px 20px; /* Button padding */
-      border: none; /* No border */
-      border-radius: 5px; /* Rounded corners */
-      cursor: pointer; /* Pointer cursor on hover */
-      font-size: 16px; /* Font size */
-      text-align: center; /* Center text */
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      text-align: center;
     }
 
     .play-games {
-      background-color: #0000ff; /* Dark blue background */
-      color: #ADD8E6; /* Light blue text */
+      background-color: #0000ff;
+      color: #ADD8E6;
     }
 
     .browse-unrestricted {
-      background-color: #99ccff; /* Slightly darker light blue background */
-      color: #0000ff; /* Dark blue text */
+      background-color: #99ccff;
+      color: #0000ff;
     }
 
     footer {
-      text-align: center; /* Center text in footer */
-      background-color: #add8e6; /* Light blue background for footer */
-      padding: 1rem; /* Padding for footer */
-      border-top: 2px solid #0000ff; /* Blue divider for footer */
+      text-align: center;
+      background-color: #add8e6;
+      padding: 1rem;
+      border-top: 2px solid #0000ff;
     }
 
     .discord-button {
-      white-space: nowrap; /* Prevent text from wrapping */
+      white-space: nowrap;
     }
   </style>
 </head>
 <body>
-  <div id="gifOverlay"></div> <!-- GIF overlay -->
+  <div id="gifOverlay"></div>
 
   <header>
     <h1>Insanity</h1>
     <nav>
       <ul>
-        <li><a href="index.html" class="nav-link active">Home</a></li> <!-- Active tab set to Home -->
+        <li><a href="index.html" class="nav-link active">Home</a></li>
         <li><a href="g.html" class="nav-link">Games</a></li>
         <li><a href="proxy.html" class="nav-link">Proxy</a></li>
         <li><a href="partners.html" class="nav-link">Partners</a></li>
@@ -147,7 +147,7 @@
           <h2>Welcome to Insanity</h2>
           <p>Insanity is a static unblocked game and proxy site, providing access to a variety of games without restrictions. Enjoy your favorite games from anywhere, whether at school, work, or home.</p>
         </div>
-        <img src="images/download.png" alt="Download" class="hero-image"> <!-- Image reference -->
+        <img src="images/download.png" alt="Download" class="hero-image">
       </div>
       <div class="button-container">
         <a href="g.html" class="button play-games">Play Games</a>
@@ -162,37 +162,29 @@
 
   <script src="script.js"></script>
   <script>
-    // Show intro only on index.html and if it hasn't been shown before
     if (window.location.pathname.endsWith('index.html')) {
       const gifOverlay = document.getElementById('gifOverlay');
-      
-      // Check if intro has been shown before
       if (!localStorage.getItem('introShown')) {
-        const gifDuration = 5000; // Duration in milliseconds (adjust as needed)
-        const staticImage = 'images/static-bg.jpg'; // Path to your static image
+        const gifDuration = 5000;
+        const staticImage = 'images/static-bg.jpg';
 
-        // Show the overlay
         setTimeout(() => {
-          gifOverlay.classList.add('hidden'); // Start fade out
+          gifOverlay.classList.add('hidden');
           document.body.style.backgroundImage = `url('${staticImage}')`;
           document.body.style.backgroundRepeat = 'no-repeat';
           document.body.style.backgroundSize = 'cover';
           document.body.style.backgroundPosition = 'center';
         }, gifDuration);
 
-        // Remove the overlay after fade out transition
         gifOverlay.addEventListener('transitionend', () => {
-          gifOverlay.style.display = 'none'; // Hide overlay after fade out
+          gifOverlay.style.display = 'none';
         });
 
-        // Set introShown in localStorage
         localStorage.setItem('introShown', 'true');
       } else {
-        // Hide the overlay if already shown
         gifOverlay.style.display = 'none';
       }
     } else {
-      // Hide the overlay if not on index.html
       const gifOverlay = document.getElementById('gifOverlay');
       gifOverlay.style.display = 'none';
     }
