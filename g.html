@@ -11,22 +11,22 @@
       color: #000; /* Black text for visibility */
     }
 
-    .button {
+    .nav-link {
       display: inline-block;
       padding: 8px 16px; /* Smaller padding */
       color: #add8e6; /* Light blue text */
       text-decoration: none;
       border-radius: 5px;
       transition: transform 0.3s; /* Transition for bulge effect */
-      font-size: 14px; /* Smaller font size for buttons */
+      font-size: 14px; /* Smaller font size for links */
       border: 2px solid transparent; /* No border by default */
     }
 
-    .button.active {
+    .nav-link.active {
       border: 2px solid #0000ff; /* Blue border for active page */
     }
 
-    .button:hover {
+    .nav-link:hover {
       transform: scale(1.1); /* Bulge effect on hover */
     }
 
@@ -47,7 +47,7 @@
       list-style: none; /* Remove default list style */
       padding: 0; /* Remove default padding */
       display: flex; /* Use flexbox for horizontal layout */
-      gap: 10px; /* Space between buttons */
+      gap: 10px; /* Space between links */
     }
 
     nav ul li {
@@ -89,11 +89,11 @@
     <h1>Insanity</h1>
     <nav>
       <ul>
-        <li><a href="index.html" class="button">Home</a></li>
-        <li><a href="g.html" class="active button">Games</a></li>
-        <li><a href="proxy.html" class="button">Proxy</a></li>
-        <li><a href="partners.html" class="button">Partners</a></li>
-        <li><a href="https://discord.gg/Gv4rVt2SJp" class="button" target="_blank" rel="noopener noreferrer">Join Discord</a></li>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="g.html" class="active nav-link">Games</a></li>
+        <li><a href="proxy.html" class="nav-link">Proxy</a></li>
+        <li><a href="partners.html" class="nav-link">Partners</a></li>
+        <li><a href="https://discord.gg/Gv4rVt2SJp" class="nav-link" target="_blank" rel="noopener noreferrer">Join Discord</a></li>
       </ul>
     </nav>
   </header>
