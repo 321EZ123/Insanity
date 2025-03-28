@@ -67,21 +67,12 @@
       color: #000; /* Black text for input */
     }
 
-    .quote-button {
-      display: block; /* Make it a block element */
-      padding: 10px 20px; /* Button padding */
-      border: none; /* No border */
-      border-radius: 5px; /* Rounded corners */
-      background-color: #0000ff; /* Blue background */
-      color: #fff; /* White text */
+    .quote-text {
+      color: #ADD8E6; /* Light blue text */
+      font-size: 18px; /* Font size for the quote */
       cursor: pointer; /* Pointer cursor on hover */
-      font-size: 18px; /* Font size */
-      margin: 20px auto; /* Center the button */
-      transition: background-color 0.3s; /* Transition for hover effect */
-    }
-
-    .quote-button:hover {
-      background-color: #00008b; /* Darker blue on hover */
+      text-align: center; /* Center the quote */
+      margin: 20px 0; /* Margin around the quote */
     }
 
     footer {
@@ -110,8 +101,8 @@
   <main>
     <section id="proxy" class="section">
       <h2 style="text-align: center;">Insanity Search</h2>
-      <div style="text-align: center;">
-        <button class="quote-button" id="quoteButton">"Click for a quote!"</button>
+      <div>
+        <span class="quote-text" id="quoteButton">Fast and Portable</span>
       </div>
       <div style="position: relative; text-align: center;">
         <form id="uv-form">
@@ -138,7 +129,7 @@
 
     document.getElementById('quoteButton').addEventListener('click', function() {
       const randomIndex = Math.floor(Math.random() * quotes.length);
-      this.innerText = quotes[randomIndex]; // Change button text to a random quote
+      this.innerText = quotes[randomIndex]; // Change text to a random quote
     });
   </script>
 </body>
