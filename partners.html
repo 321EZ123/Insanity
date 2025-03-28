@@ -40,21 +40,23 @@
       margin: 0; /* Remove default margin */
     }
 
-    .button {
+    .nav-link {
       display: inline-block;
       padding: 8px 16px; /* Smaller padding */
-      background-color: #add8e6; /* Light blue background */
-      color: #000; /* Black text for visibility */
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-      font-size: 14px; /* Smaller font size */
-      border: 2px solid #0000ff; /* Blue border */
+      color: #ADD8E6; /* Light blue text */
+      text-decoration: none; /* No underline */
+      transition: transform 0.3s; /* Transition for bulge effect */
+      font-size: 14px; /* Smaller font size for links */
     }
 
-    .button:hover {
-      background-color: #87ceeb; /* Lighter blue on hover */
-      border-color: #0000ff; /* Keep blue border on hover */
+    .nav-link.active {
+      text-decoration: underline; /* Underline for active link */
+      text-decoration-color: #0000ff; /* Dark blue underline */
+      color: #ADD8E6; /* Keep light blue text for active link */
+    }
+
+    .nav-link:hover {
+      transform: scale(1.1); /* Bulge effect on hover */
     }
 
     .partner-grid {
@@ -88,11 +90,11 @@
     <h1>Insanity</h1>
     <nav>
       <ul>
-        <li><a href="index.html" class="button">Home</a></li>
-        <li><a href="g.html" class="button">Games</a></li>
-        <li><a href="proxy.html" class="button">Proxy</a></li>
-        <li><a href="partners.html" class="active button">Partners</a></li>
-        <li><a href="https://discord.com/invite/arcgZTV9zX" class="button" target="_blank" rel="noopener noreferrer">Join Discord</a></li>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="g.html" class="nav-link">Games</a></li>
+        <li><a href="proxy.html" class="nav-link">Proxy</a></li>
+        <li><a href="partners.html" class="active nav-link">Partners</a></li>
+        <li><a href="https://discord.gg/Gv4rVt2SJp" class="nav-link" target="_blank" rel="noopener noreferrer">Join Discord</a></li>
       </ul>
     </nav>
   </header>
