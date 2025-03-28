@@ -61,20 +61,47 @@
 
     .hero {
       display: flex; /* Use flexbox for layout */
-      align-items: center; /* Center items vertically */
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items horizontally */
       padding: 20px; /* Add some padding */
       max-width: 800px; /* Limit width for better readability */
-      margin: 0; /* Ensure no margin to the sides */
+      margin: 0 auto; /* Center the hero section */
     }
 
     .hero-text {
-      flex: 1; /* Take available space */
-      text-align: left; /* Align content to the left */
+      text-align: center; /* Center text */
+      margin-bottom: 20px; /* Space below text */
     }
 
     .hero-image {
-      max-width: 300px; /* Limit image width */
-      margin-left: 20px; /* Space between text and image */
+      max-width: 400px; /* Increase image width */
+      width: 100%; /* Ensure responsiveness */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 20px; /* Space below image */
+    }
+
+    .button-container {
+      display: flex; /* Use flexbox for button layout */
+      gap: 20px; /* Space between buttons */
+    }
+
+    .button {
+      padding: 10px 20px; /* Button padding */
+      border: none; /* No border */
+      border-radius: 5px; /* Rounded corners */
+      cursor: pointer; /* Pointer cursor on hover */
+      font-size: 16px; /* Font size */
+      text-align: center; /* Center text */
+    }
+
+    .play-games {
+      background-color: #0000ff; /* Dark blue background */
+      color: #ADD8E6; /* Light blue text */
+    }
+
+    .browse-unrestricted {
+      background-color: #ADD8E6; /* Light blue background */
+      color: #0000ff; /* Dark blue text */
     }
 
     footer {
@@ -107,6 +134,10 @@
         <div class="hero-text">
           <h2>Welcome to Insanity</h2>
           <p>Insanity is a static unblocked game and proxy site, providing access to a variety of games without restrictions. Enjoy your favorite games from anywhere, whether at school, work, or home.</p>
+          <div class="button-container">
+            <a href="g.html" class="button play-games">Play Games</a>
+            <a href="proxy.html" class="button browse-unrestricted">Browse Unrestricted</a>
+          </div>
         </div>
         <img src="images/download.png" alt="Download" class="hero-image"> <!-- Image reference -->
       </div>
