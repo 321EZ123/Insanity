@@ -1,4 +1,3 @@
-// Game functionality
 function openGame(name, url) {
   const newWindow = window.open("about:blank", "_blank");
   if (newWindow) {
@@ -12,8 +11,8 @@ function openGame(name, url) {
               padding: 0; 
               height: 100%; 
               overflow: hidden; 
-              background-color: #add8e6; /* Light blue background */
-              color: #000; /* Black text for visibility */
+              background-color: #add8e6; 
+              color: #000; 
             }
             embed { 
               width: 100%; 
@@ -30,19 +29,15 @@ function openGame(name, url) {
   }
 }
 
-// Fullscreen function for proxy (works the same as openGame)
 function openFullscreen(name, url) {
-  openGame(name, url); // Reuse the same function for consistency
+  openGame(name, url);
 }
 
-// Links functionality
 document.addEventListener('DOMContentLoaded', function() {
-  // Initialize the game display if we're on the games or favorites page
   if (document.querySelector('.game-grid')) {
     updateGameDisplay();
   }
 
-  // Only run this code on the links page
   if (!document.getElementById('links-container')) return;
 
   const links = [
@@ -150,7 +145,7 @@ document.addEventListener('DOMContentLoaded', function() {
       linkElement.href = link.url;
       linkElement.className = 'link-card';
       linkElement.target = '_blank';
-      linkElement.textContent = link.title; // Changed to display the title
+      linkElement.textContent = link.title;
 
       linksContainer.appendChild(linkElement);
     }
@@ -212,11 +207,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // Initialize with the first page
   displayLinks(currentPage);
 });
 
-// Initialize favorites on page load if we're on the games page
 document.addEventListener('DOMContentLoaded', function() {
   if (document.querySelector('.game-grid')) {
     updateGameDisplay();
