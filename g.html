@@ -8,81 +8,81 @@
   <link rel="stylesheet" href="styles.css">
   <style>
     body {
-      background-color: #add8e6; /* Light blue background for the entire page */
-      color: #000; /* Black text for visibility */
+      background-color: #add8e6;
+      color: #000;
     }
 
     .nav-link {
       display: inline-block;
-      padding: 8px 16px; /* Smaller padding */
-      color: #add8e6; /* Light blue text */
+      padding: 8px 16px;
+      color: #add8e6;
       text-decoration: none;
       border-radius: 5px;
-      transition: transform 0.3s; /* Transition for bulge effect */
-      font-size: 14px; /* Smaller font size for links */
+      transition: transform 0.3s;
+      font-size: 14px;
     }
 
     .nav-link.active {
-      text-decoration: underline; /* Underline for active link */
-      text-decoration-color: #0000ff; /* Dark blue underline */
-      color: #add8e6; /* Keep light blue text for active link */
+      text-decoration: underline;
+      text-decoration-color: #0000ff;
+      color: #add8e6;
     }
 
     .nav-link:hover {
-      transform: scale(1.1); /* Bulge effect on hover */
+      transform: scale(1.1);
     }
 
     header {
-      display: flex; /* Use flexbox for header layout */
-      align-items: center; /* Center items vertically */
-      justify-content: space-between; /* Space between title and nav */
-      border-bottom: 2px solid #0000ff; /* Blue divider for the navbar */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #0000ff;
     }
 
     h1 {
-      margin-right: 20px; /* Space between title and buttons */
-      font-size: 24px; /* Adjust title size as needed */
-      text-shadow: 0 0 10px blue; /* Blue glow for the title */
+      margin-right: 20px;
+      font-size: 24px;
+      text-shadow: 0 0 10px blue;
     }
 
     nav ul {
-      list-style: none; /* Remove default list style */
-      padding: 0; /* Remove default padding */
-      display: flex; /* Use flexbox for horizontal layout */
-      gap: 10px; /* Space between links */
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 10px;
     }
 
     nav ul li {
-      margin: 0; /* Remove default margin */
+      margin: 0;
     }
 
     .game-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 20px; /* Space between game cards */
+      gap: 20px;
     }
 
     .game-card {
-      background-color: #0a0a0a; /* Card background */
-      border: 2px solid #0000ff; /* Blue border for game cards */
+      background-color: #0a0a0a;
+      border: 2px solid #0000ff;
       border-radius: 8px;
       padding: 1rem;
       text-align: center;
-      box-shadow: 0 0 5px rgba(0, 0, 255, 0.3); /* Initial blue shadow effect */
+      box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
       transition: all 0.3s ease;
     }
 
     .game-card:hover {
-      transform: translateY(-5px); /* Lift effect on hover */
-      box-shadow: 0 0 15px rgba(0, 0, 255, 0.5); /* Blue glow on hover */
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(0, 0, 255, 0.5);
     }
 
     footer {
-      background-color: #add8e6; /* Light blue background for footer */
-      border-top: 2px solid #0000ff; /* Blue divider for footer */
-      text-align: center; /* Center text in footer */
-      padding: 1rem; /* Padding for footer */
-      color: #000; /* Black text for footer */
+      background-color: #add8e6;
+      border-top: 2px solid #0000ff;
+      text-align: center;
+      padding: 1rem;
+      color: #000;
     }
   </style>
 </head>
@@ -117,7 +117,7 @@
         <div class="game-card">
           <h3>Slope</h3>
           <p>Fast-paced ball rolling game</p>
-          <a href="/games/Slope" class="button">Play Now</a>
+          <a href="/games/slope" class="button">Play Now</a>
         </div>
         <div class="game-card">
           <h3>Subway Surfers</h3>
@@ -204,7 +204,6 @@
           <p>Fast-paced FPS game</p>
           <a href="/games/krunker/" class="button">Play Now</a>
         </div>
-        <!-- New games added -->
         <div class="game-card">
           <h3>Geometry Dash (KNOCKOFF)</h3>
           <p>Rhythm-based platformer game</p>
@@ -230,12 +229,6 @@
           <p>Stickman swinging game</p>
           <a href="/games/stickmanhook/" class="button">Play Now</a>
         </div>
-        <div class="game-card">
-          <h3>Polytrack</h3>
-          <p>Racing game</p>
-          <a href="/games/Poly-track" class="button">Play Now</a>
-        </div>
-        <!-- Add other game cards here -->
       </div>
     </section>
   </main>
@@ -246,7 +239,6 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      // ...existing code...
     });
   </script>
 </body>
