@@ -1,4 +1,5 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,27 +11,6 @@
     body {
       background-color: lightblue; /* Light blue background for the entire page */
       color: #000; /* Black text for visibility */
-    }
-
-    .button {
-      display: inline-flex; /* Use inline-flex for button */
-      justify-content: center; /* Center content in button */
-      align-items: center; /* Center content vertically */
-      padding: 8px 12px; /* Adjusted padding for a sleeker button */
-      background-color: #007BFF; /* Blue background */
-      color: white; /* White text for contrast */
-      text-decoration: none;
-      border-radius: 5px; /* Slightly smaller border radius */
-      transition: background-color 0.3s, transform 0.3s; /* Added transform for hover effect */
-      font-size: 16px; /* Adjusted font size for better readability */
-      border: none; /* No border */
-      margin: 5px; /* Space between buttons */
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    }
-
-    .button:hover {
-      background-color: #0056b3; /* Darker blue on hover */
-      transform: scale(1.05); /* Slightly enlarge button on hover */
     }
 
     header {
@@ -47,15 +27,41 @@
       text-align: left; /* Align title to the left */
     }
 
+    nav ul {
+      list-style: none; /* Remove default list style */
+      padding: 0; /* Remove default padding */
+      display: flex; /* Use flexbox for horizontal layout */
+      gap: 10px; /* Space between buttons */
+    }
+
+    nav ul li {
+      margin: 0; /* Remove default margin */
+    }
+
+    .nav-link {
+      display: inline-block;
+      padding: 8px 16px; /* Smaller padding */
+      color: #ADD8E6; /* Light blue text */
+      text-decoration: none; /* No underline */
+      transition: transform 0.3s; /* Transition for bulge effect */
+      font-size: 14px; /* Smaller font size for links */
+    }
+
+    .nav-link.active {
+      text-decoration: underline; /* Underline for active link */
+      text-decoration-color: #0000ff; /* Dark blue underline */
+      color: #ADD8E6; /* Keep light blue text for active link */
+    }
+
+    .nav-link:hover {
+      transform: scale(1.1); /* Bulge effect on hover */
+    }
+
     .hero {
       text-align: left; /* Align content to the left */
       padding: 20px; /* Add some padding */
-    }
-
-    .button-container {
-      display: flex; /* Use flexbox for button container */
-      justify-content: space-between; /* Spread buttons across the line */
-      margin-top: 20px; /* Space above buttons */
+      max-width: 600px; /* Limit width for better readability */
+      margin: 0 auto; /* Center the hero section */
     }
 
     footer {
@@ -71,9 +77,13 @@
 
   <header>
     <h1>Insanity</h1>
-    <nav style="margin-left: auto;"> <!-- Added margin-left: auto to push nav to the right -->
+    <nav>
       <ul>
-        <li><a href="https://discord.com/invite/arcgZTV9zX" class="button" target="_blank" rel="noopener noreferrer">Join Discord</a></li>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="g.html" class="nav-link">Games</a></li>
+        <li><a href="proxy.html" class="active nav-link">Proxy</a></li>
+        <li><a href="partners.html" class="nav-link">Partners</a></li>
+        <li><a href="https://discord.gg/Gv4rVt2SJp" class="nav-link" target="_blank" rel="noopener noreferrer">Join Discord</a></li>
       </ul>
     </nav>
   </header>
@@ -82,13 +92,7 @@
     <section id="home" class="section">
       <div class="hero">
         <h2>Welcome to Insanity</h2>
-        <p>Insanity is a portable, static unblocked game and proxy site, providing access to a variety of games without restrictions. Our platform allows you to enjoy your favorite games from anywhere, whether you're at school, work, or home. With a user-friendly interface and a wide selection of games, you can dive right into the fun without any hassle. Plus, our proxy service ensures you can access blocked content safely and securely, keeping your online activities private and protected.</p>
-        
-        <div class="button-container">
-          <a href="g.html" class="button">Play Games</a>
-          <a href="proxy.html" class="button">Use Proxy</a>
-          <a href="partners.html" class="button">Partners</a>
-        </div>
+        <p>Insanity is a static unblocked game and proxy site, providing access to a variety of games without restrictions. Enjoy your favorite games from anywhere, whether at school, work, or home. Our proxy service ensures you can access blocked content safely.</p>
       </div>
     </section>
   </main>
