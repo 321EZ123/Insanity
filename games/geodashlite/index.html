@@ -20,15 +20,20 @@
       z-index: 0;
       position: absolute;
       background-size: cover;
-      background-image: url("background.png")
+      background-image: url("background.png");
     }
   </style>
 </head>
 
 <body>
 <a href="https://geometrylite.io/" class="info" target="_blank"><span class="svg-icon" aria-hidden="true"><svg class="svg-icon__link"><use xlink:href="#icon-info"></use></svg></span></a>
+
+<div id="loadingBlock" style="display: block;">
+    <div>Loading...</div>
+</div>
+
 <div id="gameContainer" style="display: none;">
-	<canvas id="#canvas"></canvas> 
+	<canvas id="canvas"></canvas> 
 </div>
 
 <svg class="main-svg-sprite main-svg-sprite--icons" xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +60,7 @@
 
 	var progressElement = document.getElementById('progress_fill');
 	var container = document.getElementById("gameContainer");
-	var canvas = document.getElementById("#canvas");
+	var canvas = document.getElementById("canvas");
 	let text_percent = "";
 
 	var script = document.createElement("script");
@@ -65,13 +70,11 @@
 			progressElement.style.width = 100 * progress + "%";
 			text_percent = "Downloading file: " + Math.round(progress * 100) + "%";
 			if (progress >= 99) {
-				progress_text.innerText = "Game Loading ...";
+				loadingBlock.style.display = "none"; // Hide loading block when done
+				container.style.display = "block";
 			}
 		}).then((unityInstance) => {
 			window.unityInstance = unityInstance;
-			setTimeout(function() {
-				container.style.display = "block";
-			}, 2000);
 		}).catch((message) => {
 			alert(message);
 		});
