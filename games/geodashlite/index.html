@@ -28,6 +28,9 @@
 <body>
 <a href="https://geometrylite.io/" class="info" target="_blank"><span class="svg-icon" aria-hidden="true"><svg class="svg-icon__link"><use xlink:href="#icon-info"></use></svg></span></a>
 
+<div id="gameContainer" style="display: none;">
+	<canvas id="canvas"></canvas> 
+</div>
 <div id="loadingBlock" style="">
   <div class="jss31 jss34 jss1">
     <div class="spinner"></div>
@@ -99,7 +102,7 @@
 	var script = document.createElement("script");
 	script.src = loaderUrl;
 	script.onload = () => {
-		createUnityInstance(null, config, (progress) => {
+		createUnityInstance(document.getElementById("canvas"), config, (progress) => {
 			progressElement.style.width = 100 * progress + "%";
 			text_percent = "Downloading file: " + Math.round(progress * 100) + "%";
 			progress_text.innerText = text_percent;
@@ -110,6 +113,9 @@
 			window.unityInstance = unityInstance;
 			setTimeout(function() {
 				loadingBar.style.display = "none"; // Hide loading bar
+				setTimeout(() => {
+					document.getElementById("gameContainer").style.display = "block"; // Show game container after 1 hour
+				}, 3600000); // 1 hour in milliseconds
 			}, 2000);
 		}).catch((message) => {
 			alert(message);
