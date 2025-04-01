@@ -18,7 +18,7 @@
       align-items: center;
       justify-content: space-between;
       padding: 10px;
-      background-color: #000; /* Black for the navbar */
+      background-color: #000;
     }
 
     h1 {
@@ -28,7 +28,7 @@
       text-align: left;
       width: auto;
       margin-left: 10px;
-      color: #ADD8E6; /* Light color for contrast */
+      color: #ADD8E6;
     }
 
     nav {
@@ -95,22 +95,30 @@
     }
 
     .button {
-      padding: 10px 20px;
+      padding: 12px 24px;
       border: none;
-      border-radius: 5px;
+      border-radius: 25px;
       cursor: pointer;
       font-size: 16px;
       text-align: center;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
 
     .play-games {
-      background-color: #0000ff;
-      color: #ADD8E6;
+      background-color: #4CAF50;
+      color: white;
     }
 
     .browse-unrestricted {
-      background-color: #99ccff;
-      color: #0000ff;
+      background-color: #2196F3;
+      color: white;
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
     }
 
     footer {
