@@ -64,7 +64,6 @@
 
     .hero {
       display: flex;
-      flex-direction: column; /* Changed to column for vertical layout */
       align-items: center;
       padding: 20px;
       max-width: 800px;
@@ -72,8 +71,9 @@
     }
 
     .hero-text {
-      text-align: center; /* Center text for better alignment */
-      margin-bottom: 20px; /* Space below text */
+      flex: 1;
+      text-align: left;
+      margin-right: 20px;
     }
 
     .hero-image {
@@ -147,11 +147,11 @@
   <main>
     <section id="home" class="section">
       <div class="hero">
+        <img src="images/download.png" alt="Download" class="hero-image">
         <div class="hero-text">
           <h2>Welcome to Insanity</h2>
           <p>Insanity is a static unblocked game and proxy site, providing access to a variety of games without restrictions. Enjoy your favorite games from anywhere, whether at school, work, or home.</p>
         </div>
-        <img src="images/download.png" alt="Download" class="hero-image">
       </div>
       <div class="button-container">
         <a href="g.html" class="button play-games">Play Games</a>
